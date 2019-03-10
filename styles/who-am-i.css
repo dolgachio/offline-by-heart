@@ -1,0 +1,14 @@
+.who-am-i {
+    display: flex;
+}
+
+
+
+.who-am-i__image {
+    width: 30%;
+}
+
+.who-am-i__content {
+    padding-left: 30px;
+    width: 70%
+}

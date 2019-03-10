@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <style>
         .shower {
-            --slide-ratio: calc(4 / 3);
+            --slide-ratio: calc(16 / 9);
         }
     </style>
 </head>
@@ -19,8 +20,23 @@
     </header>
 
     <section class="slide">
-        <h1>Offline by heart</h1>
-        <!-- Create your first slide -->
+        <img class="cover" src="./images/offline-by-heart.png" alt="Offline by heart">
+    </section>
+
+    <section class="slide">
+        <h2>Who am I?</h2>
+        <div class="who-am-i">
+            <img class="who-am-i__image" src="./images/stas-dolgachov.jpg" alt="Speaker image">
+            <ul class="who-am-i__content">
+                <li>Senior Software Engineer</li>
+                <li>Play saxophone</li>
+                <li>The Head of BEM police</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Why offline?</h2>
     </section>
 
     <footer class="badge">
