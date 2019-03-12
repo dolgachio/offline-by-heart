@@ -152,7 +152,7 @@
     </section>
 
     <section class="slide" data-name="File + Metadata">
-        <img class="place" src="./images/file-and-metadata.png" alt="File + Metadata diagram">
+        <img class="place" src="./images/File%20and%20metadata.svg" alt="File + Metadata diagram">
     </section>
 
     <section class="slide grid" data-name="File representation">
@@ -303,12 +303,85 @@
         </table>
     </section>
 
-    <section class="slide">
+    <section class="slide" data-name="Migrations">
         <h2>2. Migrations</h2>
+        <ol>
+            <li class="next">Migration scripts/queries</li>
+            <li class="next">Run them one by one</li>
+            <li class="next">Memorize after successful run</li>
+            <li class="next">*Rollback scripts</li>
+        </ol>
+    </section>
+
+    <section class="slide" data-name="Synchronization">
+        <h2>3. Synchronization</h2>
+        <h3 class="nextFile and metadata.svg">NgRx effects</h3>
+        <img class="cover next" src="./images/effects.svg" alt="Effects for synchronization">
+    </section>
+
+    <section class="slide" data-name="Synchronization">
+        <h2>3. Synchronization</h2>
+        <pre>
+            <code><mark>@Effect({ dispatch: false })</mark></code>
+            <code>public syncData: Observable<Action> = this.actions$.pipe(</code>
+            <code>  <mark>ofType('SYNC_DATA'),</mark></code>
+            <code>  tap((action) => {</code>
+            <code>    <mark class="important">this.dataSyncService.sync(action.payload);</mark></code>
+            <code>  })</code>
+            <code>);</code>
+        </pre>
+    </section>
+
+    <section class="slide" data-name="Tips & tricks">
+        <h2 class="shout">
+            Tips & tricks 🐶
+        </h2>
     </section>
 
     <section class="slide">
-        <h2>3. Synchronization</h2>
+        <h2>Offline is hard</h2>
+        <div>
+            <img src="./images/offline-is-hard.gif" alt="Dog falls down">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Auth when offline</h2>
+        <div>
+            <img src="./images/authozitaion.gif" alt="Dog falls down">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Deferred actions handling</h2>
+        <div>
+            <img src="./images/deferred-actions.gif" alt="Dog falls down">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Display proper UI for offline</h2>
+        <div>
+            <img src="./images/notify-user.gif" alt="Dog falls down">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Dynamic Cache</h2>
+        <div>
+            <img src="./images/dynamic-cache.gif" alt="Dog falls down">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Static Cache</h2>
+        <div>
+            <img src="./images/static-cache.gif" alt="Dog falls down">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Q&A</h2>
     </section>
 
     <footer class="badge">
