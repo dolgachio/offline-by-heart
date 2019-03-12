@@ -14,3 +14,21 @@
 .slide .mark-important {
     background: #f00;
 }
+
+.alert-highlight {
+    display: inline-block;
+    background-color: #f00;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0;
+}
+
+.success-highlight {
+    display: inline-block;
+    background-color: #bada55;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0;
+}
