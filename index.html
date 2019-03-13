@@ -39,60 +39,31 @@
         <h2 class="shout">What?</h2>
     </section>
 
+    <section class="slide black">
+        <img src="./images/meduza-offline.jpg" alt="Meduza app in offline mode">
+    </section>
+
     <section class="slide" data-name="why-offline">
         <h2 class="shout">Why?</h2>
     </section>
 
-    <section class="slide grid" data-name="iPhone">
-        <img class="cover" src="./images/iphone.png" alt="iPhone XSMax with price tag 1449$">
-
-        <ul>
-            <li class="next">A12 Bionic chip</li>
-            <li class="next">2436‑by-1125‑pixel </li>
-            <li class="next">FDD‑LTE (Bands 1 ... 71)</li>
-        </ul>
-        <p class="next main-text"><b>1449$</b></p>
-    </section>
-
-    <section class="slide grid" data-name="Alcatel">
-        <img class="cover" src="./images/alcatel.jpeg" alt="Alcatel One Touch with price tag 50$">
-
-        <ul>
-            <li class="next">1.2 GHz</li>
-            <li class="next">480 x 800 pixels</li>
-            <li class="next">512 MB of RAM</li>
-        </ul>
-        <p class="next main-text"><b>50$</b></p>
+    <section class="slide">
+        <h2 class="shout">1. Devices</h2>
     </section>
 
     <section class="slide" data-name="iPhone 6">
         <img class="cover" src="./images/iphone-6.jpg" alt="Iphone 6 from 2014">
 
-        <p class="main-text"><b>2014...</b></p>
-    </section>
-
-    <section class="slide black" data-name="Safari blank screen">
-        <img class="cover" src="./images/safari-blank-screen.png" alt="The blank screen in Safari Browser">
+        <p class="next main-text"><b>2014...</b></p>
     </section>
 
     <section class="slide" data-name="metro rule">
         <h2>
-            <div>Murphy</div>
+            <div>2. Murphy</div>
             <div>(Metro)</div>
             <div>rule</div>
         </h2>
         <img class="cover" src="./images/metro-kyiv.jpg" alt="Kyiv metro map">
-    </section>
-    
-    <section class="slide" data-name="Recap why we need offline">
-        <h2>Recap</h2>
-
-        <ul>
-            <li class="next"><h3>I don't want to make my mother sad</h3></li>
-            <li class="next"><h3>I personally have iPhone 6 which is a little bit slow in 2k19</h3></li>
-            <li class="next"><h3>I use subway with EDGE internet</h3></li>
-            <li class="next"><h3>I want to keep using my phone instead of talking to people</h3></li>
-        </ul>
     </section>
     
     <section class="slide" data-name="but...">
@@ -106,10 +77,10 @@
     <section class="slide" data-name="tech specs">
         <h2>Tech. specs</h2>
          <ul>
-             <li><h3>Angular+</h3></li>
-             <li><h3>Cordova</h3></li>
-             <li><h3>Ionic</h3></li>
-             <li><h3>Only iOS from start</h3></li>
+             <li class="next"><h3>Cordova</h3></li>
+             <li class="next"><h3>iOS only</h3></li>
+             <li class="next"><h3>Angular+</h3></li>
+             <li class="next"><h3>Ionic</h3></li>
          </ul>
     </section>
 
@@ -143,26 +114,39 @@
         <img class="place" src="./images/life-finds-the-way.gif" alt="Life finds the way">
     </section>
 
-    <section class="slide grid black" data-name="Business requirements">
-        <h2 class="white-text">
-            <div>Our</div>
-            <div>app</div>
-        </h2>
-        <img class="cover" src="./images/google-drive.jpeg" alt="Google drive folders and files screen shot">
-    </section>
-
     <section class="slide" data-name="File + Metadata">
         <img class="place" src="./images/File%20and%20metadata.svg" alt="File + Metadata diagram">
     </section>
 
+    <section class="slide">
+        <h2 class="shout">1. File</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Cordova plugin for files</h2>
+        <img src="./images/cordova-plugin.png" alt="Cordova plugin">
+    </section>
+
     <section class="slide grid" data-name="File representation">
-        <h2>File representation</h2>
-        <img class="next" src="./images/box.png" alt="Box com logo">
-        <img class="place right next" src="./images/Pdf-js_logo.svg.png" alt="pdf js logo">
+        <h2>1. File</h2>
+        <img class="cover next" src="./images/box.png" alt="Box com logo">
     </section>
 
     <section class="slide" data-name="Dmytro's Golysh pull request">
         <img class="cover" src="./images/offline-pull-request.png" alt="Dmytro's Golysh pull request to Box content preview">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">File ✅</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">2. Metadata</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Cordova plugin for SQLite DB</h2>
+        <img src="./images/cordova-plugin.png" alt="Cordova plugin">
     </section>
 
     <section class="slide grid" data-name="Redux + NgRx">
@@ -173,10 +157,16 @@
 
     <section class="slide" data-name="Store responses">
         <h2>💡 Metadata</h2>
-        <div class="columns two">
-            <img class="next" src="./images/pwa.png" alt="PWA log">
+        <ol>
+            <li class="next">Store in memory all responses</li>
+            <li class="next">When user saves file => save to <span class="mark-important">persistent Store</span></li>
+        </ol>
+    </section>
 
-            <div class="next">
+    <section class="slide" data-name="Store responses">
+        <h2>💡 Metadata</h2>
+        <div class="columns two">
+            <div>
                 <h3>Url: <mark>/folders</mark>  <mark class="mark-important next">KEY</mark></h3>
                 <h3>Response:   <mark  class="mark-important next">VALUE</mark></h3>
                 <pre class="main-text">
@@ -186,21 +176,17 @@
         </div>
     </section>
     
-    <section class="slide">
-        <h2>Implementation</h2>
-        <img class="cover" src="./images/rocky.gif" alt="Rocky Balboa training session">
-    </section>
-
     <section class="slide" data-name="issues solved">
         <h2>Issues solved:</h2>
         <ol>
             <li class="next">Wrapper for server calls</li>
-            <li class="next">Specific data model for storage</li>
-            <li class="next">Dynamic switch between online and offline</li>
+            <li class="next">Switch between online and offline</li>
             <li class="next">Data filtering</li>
-            <li class="next">Data deletion</li>
             <li class="next">...</li>
         </ol>
+
+        <img class="place right" src="./images/rocky.gif" alt="Rocky Balboa training session">
+
     </section>
 
     <section class="slide" data-name="First iteration success">
@@ -231,9 +217,8 @@
             <div>
                 <h3 class="alert-highlight">Disadvantages</h3>
                 <ol>
-                    <li class="next">Totally unclear what calls you need to save</li>
-                    <li class="next">Data filtration is required</li>
                     <li class="next">API changes very often</li>
+                    <li class="next">Totally unclear what calls you need to save</li>
                 </ol>
             </div>
         </div>
@@ -248,14 +233,12 @@
         <ul>
             <li class="next"><h4>Store data with no links to BE calls</h4></li>
             <li class="next"><h4>Cache in memory all requested data</h4></li>
-            <li class="next"><h4>"Clients" can access data by user only</h4></li>
-            <li class="next"><h4>Solid store API</h4></li>
             <li class="next"><h4>Store data in collections</h4></li>
         </ul>
     </section>
 
     <section class="slide" data-name="Collections">
-        <h2>Companies store</h2>
+        <h2>Companies store example</h2>
 
         <table class="striped">
             <tr>
@@ -303,19 +286,18 @@
         </table>
     </section>
 
+    <section class="slide">
+        <h2 class="shout">Outdated data</h2>
+    </section>
+
     <section class="slide" data-name="Migrations">
         <h2>2. Migrations</h2>
-        <ol>
-            <li class="next">Migration scripts/queries</li>
-            <li class="next">Run them one by one</li>
-            <li class="next">Memorize after successful run</li>
-            <li class="next">*Rollback scripts</li>
-        </ol>
+        <img class="cover" src="./images/migration-dia.svg" alt="Migration scripts diagram">
     </section>
 
     <section class="slide" data-name="Synchronization">
         <h2>3. Synchronization</h2>
-        <h3 class="nextFile and metadata.svg">NgRx effects</h3>
+        <h3 class="next">NgRx effects</h3>
         <img class="cover next" src="./images/effects.svg" alt="Effects for synchronization">
     </section>
 
@@ -339,45 +321,56 @@
     </section>
 
     <section class="slide">
-        <h2>Offline is hard</h2>
+        <h2>1. Offline is hard</h2>
         <div>
             <img src="./images/offline-is-hard.gif" alt="Dog falls down">
         </div>
     </section>
 
     <section class="slide">
-        <h2>Auth when offline</h2>
+        <h2>2. Auth when offline</h2>
         <div>
             <img src="./images/authozitaion.gif" alt="Dog falls down">
         </div>
     </section>
 
     <section class="slide">
-        <h2>Deferred actions handling</h2>
+        <h2>3. Deferred actions handling</h2>
         <div>
             <img src="./images/deferred-actions.gif" alt="Dog falls down">
         </div>
     </section>
 
     <section class="slide">
-        <h2>Display proper UI for offline</h2>
+        <h2>4. Display proper UI for offline</h2>
         <div>
             <img src="./images/notify-user.gif" alt="Dog falls down">
         </div>
     </section>
 
     <section class="slide">
-        <h2>Dynamic Cache</h2>
+        <h2>5. Dynamic Cache</h2>
         <div>
             <img src="./images/dynamic-cache.gif" alt="Dog falls down">
         </div>
     </section>
 
-    <section class="slide">
-        <h2>Static Cache</h2>
-        <div>
-            <img src="./images/static-cache.gif" alt="Dog falls down">
-        </div>
+    <section class="slide" data-name="on-more-thing">
+        <img class="cover" src="./images/one_more_thing.png" alt="One more thing">
+    </section>
+
+    <section class="slide" data-name="the present">
+        <h2>The present</h2>
+        <img class="cover" src="./images/pwa.png" alt="PWA">
+    </section>
+
+    <section class="slide" data-name="the present">
+        <img class="cover" src="./images/service-workers-support.png" alt="service-workers-support table">
+    </section>
+
+    <section class="slide" data-name="the future">
+        <h2>The future</h2>
+        <h3>File and Directory Entries API <span class="mark-important">DRAFT</span></h3>
     </section>
 
     <section class="slide">
