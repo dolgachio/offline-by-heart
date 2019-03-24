@@ -19,16 +19,17 @@
         <p>Yours Truly, Famous Inc.</p>
     </header>
 
-    <section class="slide">
+    <section class="slide" data-name="slide cover">
         <img class="cover" src="./images/offline-by-heart.png" alt="Offline by heart">
     </section>
 
-    <section class="slide">
+    <section class="slide" data-name="who-am-i">
         <h2>Who am I?</h2>
         <div class="who-am-i" data-name="who-am-i">
             <img class="who-am-i__image" src="./images/stas-dolgachov.jpg" alt="Speaker image">
             <ul class="who-am-i__content">
-                <li>Senior Software Engineer</li>
+                <li>Stanislav Dolgachov</li>
+                <li>Software Engineer in EPAM</li>
                 <li>Play saxophone</li>
                 <li>The Head of BEM police on the project</li>
             </ul>
@@ -93,7 +94,7 @@
             <div>Our</div>
             <div>app</div>
         </h2>
-        <img class="cover" src="./images/prism-app-2.png" alt="Google drive folders and files screen shot">
+        <img class="cover" src="./images/prism-app-2.png" alt="Prism application screenshoot">
     </section>
 
     <section class="slide" data-name="Offline requirements">
@@ -112,6 +113,11 @@
 
     <section class="slide" data-name="Life finds the way">
         <img class="place" src="./images/life-finds-the-way.gif" alt="Life finds the way">
+    </section>
+
+    <section class="slide">
+        <h2>The beginning</h2>
+        <img class="cover" src="./images/meeting.gif" alt="People on the meeting">
     </section>
 
     <section class="slide" data-name="File + Metadata">
@@ -136,15 +142,15 @@
         <img class="cover" src="./images/offline-pull-request.png" alt="Dmytro's Golysh pull request to Box content preview">
     </section>
 
-    <section class="slide">
+    <section class="slide" data-name="File">
         <h2 class="shout">File ✅</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide" data-name="metadata">
         <h2 class="shout">2. Metadata</h2>
     </section>
 
-    <section class="slide">
+    <section class="slide" data-name="Cordova plugin for SQLite DB">
         <h2>Cordova plugin for SQLite DB</h2>
         <img src="./images/cordova-plugin.png" alt="Cordova plugin">
     </section>
@@ -177,6 +183,10 @@
             </pre>
             </div>
         </div>
+    </section>
+
+    <section class="slide"  data-name="Responses storage diagram">
+        <img class="cover" src="./images/response-store.svg" alt="Responses storage diagram">
     </section>
     
     <section class="slide" data-name="Changes">
@@ -240,9 +250,16 @@
         <h2>1. Several base stores</h2>
         <ul>
             <li><h4>Store data with no links to BE calls</h4></li>
-            <li class="next"><h4>Cache in memory all requested data</h4></li>
             <li class="next"><h4>Store data in collections</h4></li>
         </ul>
+    </section>
+
+    <section class="slide"  data-name="Responses storage diagram duplicate">
+        <img class="cover" src="./images/response-store.svg" alt="Responses storage diagram">
+    </section>
+
+    <section class="slide" data-name="Several stores diagram">
+        <img class="cover" src="./images/stores.svg" alt="Several stores diagram">
     </section>
 
     <section class="slide" data-name="Collections">
@@ -294,8 +311,8 @@
         </table>
     </section>
 
-    <section class="slide">
-        <h2 class="shout">Outdated data</h2>
+    <section class="slide" data-name="Obsolete data">
+        <h2 class="shout">Obsolete data</h2>
     </section>
 
     <section class="slide" data-name="Migrations">
@@ -309,7 +326,7 @@
         <img class="cover next" src="./images/effects.svg" alt="Effects for synchronization">
     </section>
 
-    <section class="slide" data-name="Synchronization">
+    <section class="slide" data-name="Synchronization2">
         <h2>3. Synchronization</h2>
         <pre>
             <code><mark>@Effect({ dispatch: false })</mark></code>
@@ -322,7 +339,7 @@
         </pre>
     </section>
 
-    <section class="slide">
+    <section class="slide" data-name="Deferred error">
         <h2>4. Deferred error logging</h2>
         <img class="cover" src="./images/error-handling.svg" alt="error handling">
     </section>
@@ -333,42 +350,35 @@
         </h2>
     </section>
 
-    <section class="slide">
+    <section class="slide" data-name="Offline is hard">
         <h2>1. Offline is hard</h2>
         <div>
             <img src="./images/offline-is-hard.gif" alt="Dog falls down">
         </div>
     </section>
 
-    <section class="slide">
+    <section class="slide" data-name="Auth when offline">
         <h2>2. Auth when offline</h2>
         <div>
-            <img src="./images/authozitaion.gif" alt="Dog falls down">
+            <img src="./images/authozitaion.gif" alt="Dog attempt to come in through the glass door">
         </div>
     </section>
 
-    <section class="slide">
-        <h2>3. Deferred actions handling</h2>
+    <section class="slide" data-name="Display proper UI for offline">
+        <h2>3. Display proper UI for offline</h2>
         <div>
-            <img src="./images/deferred-actions.gif" alt="Dog falls down">
+            <img src="./images/notify-user.gif" alt="Dog is attempting to play">
         </div>
     </section>
 
-    <section class="slide">
-        <h2>4. Display proper UI for offline</h2>
+    <section class="slide" data-name="Dynamic Cache">
+        <h2>4. Dynamic Cache</h2>
         <div>
-            <img src="./images/notify-user.gif" alt="Dog falls down">
+            <img src="./images/dynamic-cache.gif" alt="Three dogs and one on the hoover">
         </div>
     </section>
 
-    <section class="slide">
-        <h2>5. Dynamic Cache</h2>
-        <div>
-            <img src="./images/dynamic-cache.gif" alt="Dog falls down">
-        </div>
-    </section>
-
-    <section class="slide" data-name="on-more-thing">
+    <section class="slide" data-name="one-more-thing">
         <img class="cover" src="./images/one_more_thing.png" alt="One more thing">
     </section>
 
@@ -389,7 +399,7 @@
         <img  src="./images/matrix.gif" alt="Matrix">
     </section>
 
-    <section class="slide">
+    <section class="slide" data-name="links">
         <h2>Links</h2>
         <ol>
             <li><a target="_blank" href="http://apandichi.github.io/database-migrations-in-cordova/">Database migrations in Cordova</a></li>
@@ -400,7 +410,7 @@
         </ol>
     </section>
 
-    <section class="slide">
+    <section class="slide" data-name="Q&A">
         <h2 class="shout">Q&A</h2>
     </section>
 
