@@ -7,10 +7,10 @@
     "publish": "shower publish"
   },
   "dependencies": {
-    "@shower/ribbon": "^3.2.2",
-    "shower-core": "^2.1.0"
+    "@shower/core": "^2.1.2",
+    "@shower/ribbon": "^3.2.2"
   },
   "devDependencies": {
-    "shower-cli": "^0.2.6"
+    "@shower/cli": "^0.2.8"
   }
 }
