@@ -387,8 +387,55 @@
         <img class="cover" src="./images/one_more_thing.png" alt="One more thing">
     </section>
 
+    <section class="slide" data-name="browser-implementation">
+        <h2>What about browsers?</h2>
+    </section>
+
+    <section class="slide" data-name="Good artists copy, Great artists steal">
+        <img src="./images/copy.jpg" class="cover" alt="Good artists copy, Great artists steal">
+    </section>
+
+    <section class="slide" data-name="Good artists copy, Great artists steal">
+        <h2>Pablo Picasso</h2>
+        <img src="./images/pozner.jpg" alt="Pozner">
+    </section>
+
+    <section class="slide" data-name="google-docs">
+        <img src="./images/Google-Drive-Docs-Slides-Sheets-Material-update.jpg"
+             class="cover"
+             alt="google docs and drive logos">
+    </section>
+
+    <section class="slide" data-name="docs manifest">
+        <pre>
+            <code>"content_capabilities": {</code>
+            <code>  ...</code>
+            <code>  "permissions": [ ..., <mark>"unlimitedStorage"</mark>]</code>
+            <code>},</code>
+            <code>...</code>
+            <code>"permissions": [ ..., <mark>"unlimitedStorage"</mark>],</code>
+            <code>...</code>
+        </pre>
+    </section>
+
+    <section class="slide" data-name="conten_capabilities">
+        <h3>"The <span class="mark-important">content_capabilities</span> manifest entry allows an extension to grant certain <mark>additional capabilities to web contents whose locations match a given set of URL patterns.</mark>",</h3>
+        <pre>
+            <code>"permissions": [ ..., <mark>"unlimitedStorage"</mark>]</code>
+        </pre>
+    </section>
+
+    <section class="slide" data-name="browser-case-1">
+        <h2>Case #1 (Google Docs)</h2>
+        <ol>
+            <li><h3>IndexDB</h3></li>
+            <li><h3>Browser extension for unlimited storage</h3></li>
+            <li><h3>Own browser [optional]</h3></li>
+        </ol>
+    </section>
+
     <section class="slide" data-name="the present">
-        <h2>The present</h2>
+        <h2>2k19</h2>
         <img class="cover" src="./images/pwa.png" alt="PWA">
     </section>
 
@@ -396,12 +443,32 @@
         <img class="cover" src="./images/service-workers-support.png" alt="service-workers-support table">
     </section>
 
+    <section class="slide" data-name="browser-case-1">
+        <h2>Case #2 (PWA)</h2>
+        <ol>
+            <li><h3>Cache static resources via Service Worker</h3></li>
+            <li><h3>Store metadata in IndexDB</h3></li>
+            <li><h3>Cache binary via Cache API in Main Script</h3></li>
+            <li><a href="https://github.com/stas-dolgachov/simple-file-cache">Example on Github</a></li>
+        </ol>
+    </section>
+
     <section class="slide black" data-name="the future">
-        <h2>The future</h2>
-        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/File_and_Directory_Entries_API">
-            File and Directory Entries API
-        </a>
+        <h2>
+            <a target="_blank" href="https://developers.google.com/web/updates/2019/08/native-file-system">
+                Native File System API
+            </a>
+        </h2>
         <img  src="./images/matrix.gif" alt="Matrix">
+    </section>
+
+    <section class="slide" data-name="the future">
+        <h2>Case #3 (The future)</h2>
+        <ol>
+            <li><h3>Allows read/write files from user disc(!)</h3></li>
+            <li><h3>Experimental, available by flag in Chrome 77</h3></li>
+            <li><h3>Should begin an origin trial in Chrome 78 (stable in October)</h3></li>
+        </ol>
     </section>
 
     <section class="slide" data-name="links">
@@ -412,6 +479,9 @@
             <li><a target="_blank" href="https://habr.com/en/post/439238/">PWA in Google Store RUS</a></li>
             <li><a target="_blank" href="https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc">PWA in Google Store EN</a></li>
             <li><a target="_blank" href="https://m.oursky.com/why-every-app-should-go-offline-first-53d4570963bf">Why every app should go offline-first</a></li>
+            <li><a target="_blank" href="https://m.oursky.com/why-every-app-should-go-offline-first-53d4570963bf">Why every app should go offline-first</a></li>
+            <li><a href="https://github.com/stas-dolgachov/simple-file-cache">Cache binary via Cache API example</a></li>
+            <li><a target="_blank" href="https://developers.google.com/web/updates/2019/08/native-file-system">Native File System API</a></li>
         </ol>
     </section>
 
@@ -425,7 +495,7 @@
 
     <div class="progress"></div>
 
-    <script src="node_modules/shower-core/shower.min.js"></script>
+    <script src="node_modules/@shower/core/shower.min.js"></script>
     <!-- Copyright © 2019 Yours Truly, Famous Inc. -->
 
 </body>
