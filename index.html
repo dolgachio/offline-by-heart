@@ -79,9 +79,9 @@
     <section class="slide" data-name="tech specs">
         <h2>Tech. specs</h2>
          <ul>
-             <li class="next"><h3>Mobile application for iOS</h3></li>
-             <li class="next"><h3>Ionic & Cordova</h3></li>
-             <li class="next"><h3>Angular+</h3></li>
+             <li><h3>Mobile application for iOS</h3></li>
+             <li><h3>Ionic & Cordova</h3></li>
+             <li><h3>Angular+</h3></li>
          </ul>
     </section>
 
@@ -97,13 +97,9 @@
         <img class="cover" src="./images/offline-developers.png" alt="Dmytro and Stan picture before starting the project">
     </section>
 
-    <section class="slide" data-name="Offline requirements">
-        <h2>Offline requirements</h2>
-        <ul>
-            <li><h3>Save</h3></li>
-            <li><h3>Preview</h3></li>
-            <li><h3>Delete</h3></li>
-        </ul>
+    <section class="slide" data-name="Offline requirements for files">
+        <h2>Offline requirements for files</h2>
+        <img class="cover" src="./images/offline-requirements.svg" alt="Save Preview Delete">
     </section>
 
     <section class="slide" data-name="what could go wrong">
@@ -111,9 +107,9 @@
         <img class="place" src="./images/what-could-possibly-go-wrong-gif.gif" alt="What could possible go wrong?">
     </section>
 
-    <section class="slide" data-name="Life finds the way">
-        <h2 class="next">Life finds the way</h2>
-        <img class="place" src="./images/life-finds-the-way.gif" alt="Life finds the way">
+    <section class="slide" data-name="Life finds a way.">
+        <h2 class="next">Life finds a way.</h2>
+        <img class="place" src="./images/life-finds-the-way.gif" alt="Life finds a way.">
     </section>
 
     <section class="slide">
@@ -156,12 +152,20 @@
         <img src="./images/cordova-plugin.png" alt="Cordova plugin">
     </section>
 
-    <section class="slide" data-name="Store responses">
-        <h2>💡 Metadata</h2>
+    <section class="slide" data-name="Cordova plugin for SQLite DB">
+        <h2>💡 Progressive Web Applications (Approach)</h2>
+        <img class="place" src="./images/pwa.png" alt="pwa">
+    </section>
+
+    <section class="slide" data-name="Store responses"
+             style="display: flex; height: 100%; align-items: center;">
         <div class="columns two">
             <div>
-                <h3>Url: <mark>/folders</mark>  <mark class="mark-important next">KEY</mark></h3>
-                <h3>Response:   <mark  class="mark-important next">VALUE</mark></h3>
+                <h2>Url: <mark>/folders</mark>  <mark class="mark-important next">KEY</mark></h2>
+            </div>
+
+            <div>
+                <h2>Response:   <mark  class="mark-important next">VALUE</mark></h2>
                 <pre class="main-text">
             [<img width="50" height="50" src="./images/dog.png" alt="dog">, <img width="50" height="50" src="./images/dog.png" alt="dog">, <img width="50" height="50" src="./images/dog.png" alt="dog">]
             </pre>
@@ -233,8 +237,8 @@
     <section class="slide" data-name="1. Several base stores">
         <h2>1. Several base stores</h2>
         <ul>
-            <li><h4>Store data with no links to BE calls</h4></li>
-            <li class="next"><h4>Store data in collections</h4></li>
+            <li class="next"><h3>Store data with no links to BE calls</h3></li>
+            <li class="next"><h3>Store data in collections</h3></li>
         </ul>
     </section>
 
@@ -335,7 +339,7 @@
     </section>
 
     <section class="slide" data-name="Offline is hard">
-        <h2>1. Offline is hard</h2>
+        <h2>1. Offline data backward compatibility</h2>
         <div>
             <img src="./images/offline-is-hard.gif" alt="Dog falls down">
         </div>
@@ -367,15 +371,13 @@
     </section>
 
     <section class="slide" data-name="browser-implementation">
-        <h2>What about browsers?</h2>
+        <h2 class="shout">Offline in browsers?</h2>
     </section>
 
     <section class="slide" data-name="Good artists copy, Great artists steal">
-        <img src="./images/copy.jpg" class="cover" alt="Good artists copy, Great artists steal">
-    </section>
-
-    <section class="slide" data-name="Good artists copy, Great artists steal">
-        <h2>Pablo Picasso</h2>
+        <blockquote>
+            <h2>Good artists copy, Great artists steal</h2>
+        </blockquote>
         <img src="./images/pozner.jpg" alt="Pozner">
     </section>
 
@@ -386,6 +388,7 @@
     </section>
 
     <section class="slide" data-name="docs manifest">
+        <h2>manifest.json</h2>
         <pre>
             <code>"content_capabilities": {</code>
             <code>  ...</code>
@@ -407,9 +410,9 @@
     <section class="slide" data-name="browser-case-1">
         <h2>Case #1 (Google Docs)</h2>
         <ol>
+            <li><h3>Own browser</h3></li>
             <li><h3>IndexDB</h3></li>
             <li><h3>Browser extension for unlimited storage</h3></li>
-            <li><h3>Own browser [optional]</h3></li>
         </ol>
     </section>
 
@@ -428,7 +431,7 @@
             <li><h3>Cache static resources via Service Worker</h3></li>
             <li><h3>Store metadata in IndexDB</h3></li>
             <li><h3>Cache binary via Cache API in Main Script</h3></li>
-            <li><a href="https://github.com/stas-dolgachov/simple-file-cache">Example on Github</a></li>
+            <li><a target="_blank" href="https://github.com/stas-dolgachov/simple-file-cache">Example on Github</a></li>
         </ol>
     </section>
 
@@ -450,6 +453,10 @@
         </ol>
     </section>
 
+    <section class="slide black" data-name="offline text edito">
+        <img class="cover" src="./images/offline-text-editor.png" alt="offline text editor">
+    </section>
+
     <section class="slide" data-name="links">
         <h2>Links</h2>
         <ol>
@@ -459,7 +466,7 @@
             <li><a target="_blank" href="https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc">PWA in Google Store EN</a></li>
             <li><a target="_blank" href="https://m.oursky.com/why-every-app-should-go-offline-first-53d4570963bf">Why every app should go offline-first</a></li>
             <li><a target="_blank" href="https://m.oursky.com/why-every-app-should-go-offline-first-53d4570963bf">Why every app should go offline-first</a></li>
-            <li><a href="https://github.com/stas-dolgachov/simple-file-cache">Cache binary via Cache API example</a></li>
+            <li><a target="_blank" href="https://github.com/stas-dolgachov/simple-file-cache">Cache binary via Cache API example</a></li>
             <li><a target="_blank" href="https://developers.google.com/web/updates/2019/08/native-file-system">Native File System API</a></li>
         </ol>
     </section>
