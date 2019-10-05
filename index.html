@@ -31,7 +31,6 @@
                 <li>Stanislav Dolgachov</li>
                 <li>Software Engineer in EPAM</li>
                 <li>Play saxophone</li>
-                <li>The Head of BEM police on the project</li>
             </ul>
         </div>
     </section>
@@ -55,7 +54,7 @@
     <section class="slide" data-name="iPhone 6">
         <img class="cover" src="./images/iphone-6.jpg" alt="Iphone 6 from 2014">
 
-        <p class="next main-text"><b>2014...</b></p>
+        <p class="main-text"><b>2014</b></p>
     </section>
 
     <section class="slide" data-name="metro law">
@@ -121,22 +120,18 @@
         <img class="place" src="./images/File%20and%20metadata.svg" alt="File + Metadata diagram">
     </section>
 
-    <section class="slide">
-        <h2 class="shout">1. File</h2>
+    <section class="slide grid" data-name="File representation">
+        <h2>1. File</h2>
+        <img class="cover" src="./images/box.png" alt="Box com logo">
+    </section>
+
+    <section class="slide" data-name="Dmytro's Golysh pull request">
+        <img class="cover" src="./images/offline-pull-request.png" alt="Dmytro's Golysh pull request to Box content preview">
     </section>
 
     <section class="slide">
         <h2>Cordova plugin for files</h2>
         <img src="./images/cordova-plugin.png" alt="Cordova plugin">
-    </section>
-
-    <section class="slide grid" data-name="File representation">
-        <h2>1. File</h2>
-        <img class="cover next" src="./images/box.png" alt="Box com logo">
-    </section>
-
-    <section class="slide" data-name="Dmytro's Golysh pull request">
-        <img class="cover" src="./images/offline-pull-request.png" alt="Dmytro's Golysh pull request to Box content preview">
     </section>
 
     <section class="slide" data-name="File">
@@ -152,13 +147,25 @@
         <img src="./images/cordova-plugin.png" alt="Cordova plugin">
     </section>
 
+    <section class="slide grid black" data-name="Prism application">
+        <h2 class="white-text">
+            <div>Our</div>
+            <div>app</div>
+        </h2>
+        <img class="cover" src="./images/prism-app-2.png" alt="Prism application screenshoot">
+    </section>
+
     <section class="slide" data-name="Cordova plugin for SQLite DB">
         <h2>💡 Progressive Web Applications (Approach)</h2>
         <img class="place" src="./images/pwa.png" alt="pwa">
     </section>
 
+    <section class="slide" data-name="service worker">
+        <img class="cover" src="./images/service-worker.jpeg" alt="service worker graph">
+    </section>
+
     <section class="slide" data-name="Store responses"
-             style="display: flex; height: 100%; align-items: center;">
+             style="display: flex; align-items: center;">
         <div class="columns two">
             <div>
                 <h2>Url: <mark>/folders</mark>  <mark class="mark-important next">KEY</mark></h2>
@@ -174,7 +181,7 @@
     </section>
 
     <section class="slide"  data-name="Responses storage diagram">
-        <img class="cover" src="./images/response-store.svg" alt="Responses storage diagram">
+        <img style="height: 90%;" class="shout" src="./images/response-store.svg" alt="Responses storage diagram">
     </section>
 
     <section class="slide" data-name="Changes">
@@ -235,15 +242,11 @@
     </section>
 
     <section class="slide" data-name="1. Several base stores">
-        <h2>1. Several base stores</h2>
-        <ul>
-            <li class="next"><h3>Store data with no links to BE calls</h3></li>
-            <li class="next"><h3>Store data in collections</h3></li>
-        </ul>
+        <h2 class="shout">1. Refactor data store</h2>
     </section>
 
     <section class="slide"  data-name="Responses storage diagram duplicate">
-        <img class="cover" src="./images/response-store.svg" alt="Responses storage diagram">
+        <img style="height: 90%;" class="cover" src="./images/response-store.svg" alt="Responses storage diagram">
     </section>
 
     <section class="slide" data-name="Several stores diagram">
@@ -339,7 +342,7 @@
     </section>
 
     <section class="slide" data-name="Offline is hard">
-        <h2>1. Offline data backward compatibility</h2>
+        <h2>1. Offline data store</h2>
         <div>
             <img src="./images/offline-is-hard.gif" alt="Dog falls down">
         </div>
@@ -352,22 +355,15 @@
         </div>
     </section>
 
-    <section class="slide" data-name="Display proper UI for offline">
-        <h2>3. Display proper UI for offline</h2>
-        <div>
-            <img src="./images/notify-user.gif" alt="Dog is attempting to play">
-        </div>
-    </section>
-
     <section class="slide" data-name="Dynamic Cache">
-        <h2>4. Dynamic Cache</h2>
+        <h2>3. Dynamic Cache</h2>
         <div>
             <img src="./images/dynamic-cache.gif" alt="Three dogs and one on the hoover">
         </div>
     </section>
 
     <section class="slide" data-name="one-more-thing">
-        <img class="cover" src="./images/one_more_thing.png" alt="One more thing">
+        <img style="height: 90%;" class="cover" src="./images/one_more_thing.png" alt="One more thing">
     </section>
 
     <section class="slide" data-name="browser-implementation">
@@ -381,16 +377,21 @@
         <img src="./images/pozner.jpg" alt="Pozner">
     </section>
 
-    <section class="slide" data-name="google-docs">
-        <img src="./images/Google-Drive-Docs-Slides-Sheets-Material-update.jpg"
+    <section class="slide black" data-name="google-docs">
+        <img src="./images/google-docs.png"
              class="cover"
-             alt="google docs and drive logos">
+             alt="google docs">
+    </section>
+
+    <section class="slide black" data-name="google-docs-extension">
+        <img src="./images/google-docs-extension.png"
+             alt="google docs offline extension">
     </section>
 
     <section class="slide" data-name="docs manifest">
         <h2>manifest.json</h2>
         <pre>
-            <code>"content_capabilities": {</code>
+            <code><mark>"content_capabilities"</mark>: {</code>
             <code>  ...</code>
             <code>  "permissions": [ ..., <mark>"unlimitedStorage"</mark>]</code>
             <code>},</code>
@@ -421,10 +422,6 @@
         <img class="cover" src="./images/pwa.png" alt="PWA">
     </section>
 
-    <section class="slide" data-name="the present">
-        <img class="cover" src="./images/service-workers-support.png" alt="service-workers-support table">
-    </section>
-
     <section class="slide" data-name="browser-case-1">
         <h2>Case #2 (PWA)</h2>
         <ol>
@@ -444,17 +441,20 @@
         <img  src="./images/matrix.gif" alt="Matrix">
     </section>
 
+    <section class="slide black" data-name="offline text editor">
+        <img class="cover" src="./images/offline-text-editor.png" alt="offline text editor">
+    </section>
+
     <section class="slide" data-name="the future">
         <h2>Case #3 (The future)</h2>
         <ol>
-            <li><h3>Allows read/write files from user disc(!)</h3></li>
-            <li><h3>Experimental, available by flag in Chrome 77</h3></li>
+            <li><h3>Available by flag in Chrome 77</h3></li>
             <li><h3>Should begin an origin trial in Chrome 78 (stable in October)</h3></li>
         </ol>
     </section>
 
-    <section class="slide black" data-name="offline text edito">
-        <img class="cover" src="./images/offline-text-editor.png" alt="offline text editor">
+    <section class="slide" data-name="Q&A">
+        <h2 class="shout">Q&A</h2>
     </section>
 
     <section class="slide" data-name="links">
@@ -469,10 +469,6 @@
             <li><a target="_blank" href="https://github.com/stas-dolgachov/simple-file-cache">Cache binary via Cache API example</a></li>
             <li><a target="_blank" href="https://developers.google.com/web/updates/2019/08/native-file-system">Native File System API</a></li>
         </ol>
-    </section>
-
-    <section class="slide" data-name="Q&A">
-        <h2 class="shout">Q&A</h2>
     </section>
 
     <footer class="badge">
